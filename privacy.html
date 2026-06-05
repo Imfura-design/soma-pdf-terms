@@ -40,7 +40,7 @@
       <p>Privacy Policy</p>
     </div>
     <main>
-      <p class="updated">Last updated: 3 June 2026</p>
+      <p class="updated">Last updated: 5 June 2026</p>
       <p class="lead">
         Soma PDF is a local-first desktop application. We designed it so that your
         documents and personal information stay on your own computer.
@@ -53,10 +53,12 @@
 
       <h2>How your documents are handled</h2>
       <p>Every operation &mdash; opening, reading, editing, annotating, converting,
-        OCR, signing, redaction, and protection &mdash; happens entirely on your
-        device. Your PDFs and any files you add are never uploaded to us or to any
-        third party. Files are read from and written to the locations you choose on
-        your own machine.</p>
+        OCR, translation, signing, redaction, protection, and the built-in AI
+        assistant &mdash; happens entirely on your device. Your PDFs and any files
+        you add are never uploaded to us or to any third party. The OCR,
+        translation, and AI features all run locally on your own machine; your
+        document text is never sent anywhere. Files are read from and written to the
+        locations you choose on your own machine.</p>
 
       <h2>Licensing</h2>
       <p>If you activate the app with a license key, the key is validated
@@ -64,11 +66,17 @@
         sent to any server.</p>
 
       <h2>Network access</h2>
-      <p>Soma PDF works fully offline. The only optional outbound connection is an
-        application-update check, which may contact the update service to ask
-        whether a newer version exists. This check sends no document content and no
-        personal information. When the app is installed from the Microsoft Store,
-        updates are delivered by the Store and this check is not used.</p>
+      <p>Soma PDF works fully offline. There are two optional connections, and
+        neither sends any document content or personal information:</p>
+      <p><strong>AI model download.</strong> The first time you open the on-device
+        AI assistant, the app downloads its language model once from a public host
+        and stores it locally. This is a one-time download of the model file only;
+        after it completes, the assistant runs fully offline. The OCR and
+        translation models are bundled with the app and require no download.</p>
+      <p><strong>Application-update check.</strong> The app may contact the update
+        service to ask whether a newer version exists. When the app is installed
+        from the Microsoft Store, updates are delivered by the Store and this check
+        is not used.</p>
       <p>The in-app &ldquo;View online&rdquo; link for the Terms of Use opens your
         default web browser to a public web page only when you click it.</p>
 
