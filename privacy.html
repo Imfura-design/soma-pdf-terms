@@ -40,7 +40,7 @@
       <p>Privacy Policy</p>
     </div>
     <main>
-      <p class="updated">Last updated: 5 June 2026</p>
+      <p class="updated">Last updated: 7 June 2026</p>
       <p class="lead">
         Soma PDF is a local-first desktop application. We designed it so that your
         documents and personal information stay on your own computer.
@@ -54,11 +54,13 @@
       <h2>How your documents are handled</h2>
       <p>Every operation &mdash; opening, reading, editing, annotating, converting,
         OCR, translation, signing, redaction, protection, and the built-in AI
-        assistant &mdash; happens entirely on your device. Your PDFs and any files
-        you add are never uploaded to us or to any third party. The OCR,
-        translation, and AI features all run locally on your own machine; your
-        document text is never sent anywhere. Files are read from and written to the
-        locations you choose on your own machine.</p>
+        assistant &mdash; happens entirely on your device by default. Your PDFs and
+        any files you add are never uploaded to us, and OCR, translation, and the
+        built-in AI assistant run locally on your own machine. The one exception is
+        the optional cloud AI tier described under &ldquo;Network access&rdquo; below
+        &mdash; it is off by default, and your document text is sent out only for a
+        document you explicitly turn it on for. Files are read from and written to
+        the locations you choose on your own machine.</p>
 
       <h2>Licensing</h2>
       <p>If you activate the app with a license key, the key is validated
@@ -66,8 +68,10 @@
         sent to any server.</p>
 
       <h2>Network access</h2>
-      <p>Soma PDF works fully offline. There are two optional connections, and
-        neither sends any document content or personal information:</p>
+      <p>Soma PDF works fully offline by default. The model download and update
+        check below send no document content or personal information; the optional
+        cloud AI tier sends document text only for documents you explicitly opt
+        in:</p>
       <p><strong>AI model download.</strong> The first time you open the on-device
         AI assistant, the app downloads its language model once from a public host
         and stores it locally. This is a one-time download of the model file only;
@@ -77,6 +81,16 @@
         service to ask whether a newer version exists. When the app is installed
         from the Microsoft Store, updates are delivered by the Store and this check
         is not used.</p>
+      <p><strong>Optional cloud AI (off by default).</strong> If you choose to add
+        your own cloud provider API key (Settings &rarr; AI) and then turn on the
+        cloud tier for a specific document, that document&rsquo;s text and your
+        question are sent to the provider you chose (e.g. Groq or Cerebras) to
+        generate a response. This happens only for documents you explicitly opt in
+        &mdash; one at a time, after a confirmation that warns you the text leaves
+        your device &mdash; and is intended for non-confidential documents only. Your
+        API key is stored encrypted on your device and is never sent to us. Soma PDF
+        operates no servers of its own and never receives this data; it is handled
+        under your chosen provider&rsquo;s privacy policy.</p>
       <p>The in-app &ldquo;View online&rdquo; link for the Terms of Use opens your
         default web browser to a public web page only when you click it.</p>
 
